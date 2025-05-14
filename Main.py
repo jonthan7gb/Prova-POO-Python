@@ -146,5 +146,8 @@ while escolha != 4:
             if removido == False:
                 print("\n== Nenhum Transporte Cadastrado nesse ID ==\n") 
             
+
+        case 4:
+            print("==== Saindo do Programa ====")
         case _:
             print("\n=== Escolha inválida ===\n")
