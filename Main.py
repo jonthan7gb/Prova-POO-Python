@@ -30,6 +30,7 @@ while escolha != 4:
 
     match escolha:
         case 1:
+            t.sleep(0.5)
             print("\n== Tipo de Transporte ==")
             print("1 - Onibus")
             print("2 - Trem")
@@ -38,6 +39,7 @@ while escolha != 4:
 
             match escolhaVeiculo:
                 case 1:
+                    t.sleep(0.5)
                     print("\n==== Cadastrar Onibus ====")
                     capacidadePass = int(input("? - Capacidade de passageiros do onibus: "))
                     linhaOpe = input("? - Nome ou número da linha de operação: ")
@@ -55,6 +57,7 @@ while escolha != 4:
                         print("\n== Tipo de onibus inválido ==\n")
 
                 case 2:
+                    t.sleep(0.5)
                     print("\n==== Cadastrar Trem ====")
                     capacidadePass = int(input("? - Capacidade de passageiros do trem: "))
                     linhaOpe = input("? - Nome ou número da linha de operação: ")
@@ -68,6 +71,7 @@ while escolha != 4:
                     print("\n-- Trem cadastrado com sucesso --\n")
 
                 case 3:
+                    t.sleep(0.5)
                     print("\n==== Cadastrar Metrô ====")
                     capacidadePass = int(input("? - Capacidade de passageiros do metrô: "))
                     linhaOpe = input("? - Nome ou número da linha de operação: ")
@@ -90,6 +94,7 @@ while escolha != 4:
                     
                       
         case 2:
+            t.sleep(0.5)
             print("\n==== Listar Transportes ====")
             print("1 - Todos")
             print("2 - Onibus")
@@ -97,7 +102,7 @@ while escolha != 4:
             print("4 - Metrôs")
             escolhaPesquisa = int(input("? - Sua escolha: "))
             print("")
-
+            t.sleep(0.5)
             match escolhaPesquisa:
                 case 1:
                     print(35 * "=")
@@ -134,6 +139,7 @@ while escolha != 4:
                     print("=== Escolha inválida ===\n")
 
         case 3:
+            t.sleep(0.5)
             print("\n==== Remover Transporte ====")
             transporteRemover = int(input("? - Insira o id do transporte que deseja remover: "))
 
