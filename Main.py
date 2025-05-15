@@ -3,6 +3,7 @@ from TransportePublico import Onibus
 from TransportePublico import Trem
 from TransportePublico import Metro
 from TransportePublico import mostrarMenu
+import time as t
 
 ListaTransportes = []
 escolha = 0
@@ -102,27 +103,31 @@ while escolha != 4:
                     print(35 * "=")
                     for transporte in ListaTransportes:
                         transporte.exibir_status()    
+                        t.sleep(1)
                     print("")
 
                 case 2:  
                     print(35 * "=")
                     for transporte in ListaTransportes:
                         if transporte.transp == "Onibus":
-                            transporte.exibir_status()             
+                            transporte.exibir_status()     
+                            t.sleep(1)        
                     print("")
 
                 case 3:  
                     print(35 * "=")
                     for transporte in ListaTransportes:
                         if transporte.transp == "Trem":
-                            transporte.exibir_status()             
+                            transporte.exibir_status()  
+                            t.sleep(1)           
                     print("")
 
                 case 4:  
                     print(35 * "=")
                     for transporte in ListaTransportes:
                         if transporte.transp == "Metrô":
-                            transporte.exibir_status()             
+                            transporte.exibir_status()  
+                            t.sleep(1)           
                     print("")
                 
                 case _:
@@ -136,18 +141,25 @@ while escolha != 4:
             for transporte in ListaTransportes:
                 if transporteRemover == transporte.id:
                     print("")
+                    t.sleep(1)
                     print(35 * "=")
                     
                     transporte.exibir_status()
+                    t.sleep(1)
                     ListaTransportes.remove(transporte)
                     removido = True
                     print("\n==== Transporte removido com sucesso ====\n")
+                    t.sleep(1)
 
             if removido == False:
+                t.sleep(1)
                 print("\n== Nenhum Transporte Cadastrado nesse ID ==\n") 
+                t.sleep(1)
             
 
         case 4:
+            t.sleep(1)
             print("==== Saindo do Programa ====")
+            t.sleep(1)
         case _:
             print("\n=== Escolha inválida ===\n")
